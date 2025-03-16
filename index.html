@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="hero">
+        <h1>Stay Organized with To-Do List</h1>
+        <p>Plan your day and boost productivity</p>
+        <button onclick="scrollToTodo()">Get Started</button>
+    </header>
+
+    <section class="features">
+        <h2>Why Choose Our To-Do List App?</h2>
+        <div class="feature-box">
+            <div class="feature">
+                <h3>Easy to Use</h3>
+                <p>Add, complete, and delete tasks effortlessly.</p>
+            </div>
+            <div class="feature">
+                <h3>Responsive Design</h3>
+                <p>Works seamlessly on all devices.</p>
+            </div>
+            <div class="feature">
+                <h3>Fast & Lightweight</h3>
+                <p>Optimized for speed and smooth performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="todo-section" class="container">
+        <h2>To-Do List</h2>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+    </section>
+    <script defer src="script.js"></script>
+</body>
+</html>
